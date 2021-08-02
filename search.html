@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Google Search</title>
-        <link href="favicon.ico" rel="icon" type="image/x-icon" />
+        <title>Google</title>
+        <link href="images/favicon.ico" rel="icon"/>
         <meta view="viewport" content="width=device-width, initial-scale=1.0">
         <meta lang="en">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -97,6 +97,11 @@
                 width: 100%;
                 outline: none;
                 font-size: 16px;
+                transition: .2s ease-in-out;
+            }
+
+            #textfield:hover {
+                box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1), -1px -1px 5px 1px rgba(0, 0, 0, .1);
             }
 
             .search-icon {
@@ -125,10 +130,12 @@
                 cursor: pointer; 
                 display: inline-block;
                 border-radius: 4px;
+                transition: .2s ease-out;
             }
 
-            btn1:hover {
-                opacity: -200;
+            .btn1:hover {
+                border: 1px solid #ddd;
+                box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1), -1px -1px 5px 1px rgba(0, 0, 0, .1);
             }
 
             .language {
@@ -207,14 +214,14 @@
     </head>
     <body>
         <div class="nav1">
-            <a href="">
+            <a href="https://mail.google.com/mail/&ogbl">
                 Gmail
             </a>
-            <a href="">
+            <a href="https://www.google.com.ng/imghp?hl=en&ogbl">
                 Images
             </a>
-            <img src="images/g-menu.png" style="length:30px; width:30px">
-            <button>Sign In</button>   
+            <a href="https://www.google.com.ng/intl/en/about/products"><img src="images/g-menu.png" style="length:30px; width:30px"></a>
+            <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ"><button>Sign In</button></a>
         </div>
         <br>
         <br>
@@ -228,16 +235,16 @@
                     <input type="text" id="textfield">
                     <img src="images/vs.png" class="voice-icon">
                     <input type="submit" class="btn1" value="Google search"/>
-                    <input type="submit" class="btn1" value="I'm feeling lucky">
+                    <a href="https://www.google.com/doodles"><input type="submit" class="btn1" value="I'm feeling lucky"></a>
                 </div>
             </form>
         </div>
         <div class="language">
             Google also offers language in: 
-            <a href="">Hausa</a>
-            <a href="">Igbo</a>
-            <a href="">Èdè Yorùbá</a>
-            <a href="">Nigerian Pidgin</a>
+            <a href="https://www.google.com/setprefs?sig=0_R2HoT5qhF5NwTc4pyUhmQZmon2w%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwjCtLSfyJLyAhVLfMAKHXYEBFUQ2ZgBCA4">Hausa</a>
+            <a href="https://www.google.com/setprefs?sig=0_R2HoT5qhF5NwTc4pyUhmQZmon2w%3D&hl=ig&source=homepage&sa=X&ved=0ahUKEwjCtLSfyJLyAhVLfMAKHXYEBFUQ2ZgBCA8">Igbo</a>
+            <a href="https://www.google.com/setprefs?sig=0_R2HoT5qhF5NwTc4pyUhmQZmon2w%3D&hl=yo&source=homepage&sa=X&ved=0ahUKEwjCtLSfyJLyAhVLfMAKHXYEBFUQ2ZgBCBA">Èdè Yorùbá</a>
+            <a href="https://www.google.com/setprefs?sig=0_R2HoT5qhF5NwTc4pyUhmQZmon2w%3D&hl=pcm&source=homepage&sa=X&ved=0ahUKEwjCtLSfyJLyAhVLfMAKHXYEBFUQ2ZgBCBE">Nigerian Pidgin</a>
         </div>
         <br>
         <br>
@@ -245,20 +252,20 @@
             <h4>Nigeria</h4>
             <div class="footer-links">
                 <div class="left-link">
-                    <a href="">About</a>
-                    <a href="">Advertising</a>
-                    <a href="">Business</a>
-                    <a href="">How Search works</a>
+                    <a href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                    <a href="https://www.google.com/intl/en_ng/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                    <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                    <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
                 </div>
                 <div class="carbon">
-                    <a href="">
+                    <a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
                         <img src="images/carbon-neutral.png" style="height: 14px;">
                         Carbon neutral since 2007
                     </a>
                 </div>
                 <div class="right-link">
-                    <a href="">Privacy</a>
-                    <a href="">Terms</a>
+                    <a href="https://policies.google.com/privacy?hl=en-NG&fg=1">Privacy</a>
+                    <a href="https://policies.google.com/terms?hl=en-NG&fg=1">Terms</a>
                     <a href="">Settings</a>
                 </div>
             </div>
