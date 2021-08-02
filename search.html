@@ -7,51 +7,261 @@
         <meta lang="en">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <style>
-            #textfield {
-                border-radius: 28px;
-                border: solid antiquewhite;
-                padding: 25px;
-                height: 40px;
-                width: 500px;
+            * {
+                box-sizing: border-box;
+                padding: 0px;
+                margin: 0px;
+                text-decoration: none;
+                font-family: arial, sans-serif;
             }
 
-            .col {
-                margin: 2px;
-                padding: 0 4px;
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            .nav1 {
+                display: flex;
+                align-items:center;
+                justify-content: flex-end;
+                margin-right:30px;
+                margin-left:14px;
+            }
+
+            .nav1 a {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 13px;
+                font-family: arial, sans-serif;
+                color: rgb(0, 0, 0, 0.8);
+                font-weight: 400;
+                line-height: 24px;
+                cursor: pointer;
+                padding: 5px 6.7px
+            }
+
+            .nav1 a:hover {
+                text-decoration: underline;
+                opacity: .85;
+            }
+
+            .nav1 img {
+                width:34px;
+                padding:5px;
+                margin: auto 7px;
+                cursor: pointer;
+            }
+
+            .nav1 img:hover {
+                opacity: .8
+            }
+
+            .nav1 button {
+                border: 1px solid #4285f4;
+                outline: none;
+                background: #4285f4;
+                font-weight: bold;
+                color: #fff;
+                padding: 7px 12px;
+                margin: 5px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .containter2 {
+                flex: 1;
+            }
+
+            .container2 img {
+                display: block;
+                margin: 0px auto;
+                margin-top: 107px;
+            }
+
+            .search-box {
+                width: 580px;
+                margin: 0px auto;
+                position: relative;
+                text-align: center;
+                margin-top: -8px; 
+            }
+
+            #textfield {
+                display: block;
+                border-radius: 25px;
+                border: 1px solid #ddd;
+                color: rgb(0, 0, 0, 0.8);
+                padding: 13px;
+                padding-left: 45px;
+                width: 100%;
+                outline: none;
+                font-size: 16px;
+            }
+
+            .search-icon {
+                width: 20px;
+                opacity: .4;
+                position: absolute;
+                top: -89px;
+                left: 16px;
+            }
+
+            .voice-icon {
+                width: 14px;
+                position: absolute;
+                top: -89px;
+                right: 24px;
+            }
+
+            .btn1 {
+                color: #666;
                 font-size: 14px;
-                font-family: arial,sans-serif;
+                border: 1px solid transparent;
+                padding: 9px 15px;
+                margin-top: 25px;
+                margin-right:10px;
+                outline: none;
+                cursor: pointer; 
+                display: inline-block;
+                border-radius: 4px;
             }
-            .container2 {
-                align-content: center;
+
+            btn1:hover {
+                opacity: -200;
             }
+
+            .language {
+                text-align:center;
+                margin-top: 8px;
+                font-size: 13px;
+                color: #111;
+            }
+
+            .language a {
+                text-decoration-line: none;
+                margin-left: 5px;
+            }
+
+            .language a:hover {
+                text-decoration: underline;
+            }
+
+            footer {
+                background: #f2f2f2;
+            }
+
+            footer h4 {
+                color: rgb(0, 0, 0, 0.54);
+                font-size: 15px;
+                font-weight: 400;
+                padding-left: 28px;
+                line-height: 39.9px;
+                border: 1px solid #eee
+            }
+
+            footer a {
+                color: #5f6368;
+                text-decoration: none;
+                display: inline-block;
+                padding: 12px 11px;
+                font-size: 14px;
+            }
+
+            footer a:hover {
+                text-decoration: underline;
+            }
+
+            .footer-links {
+                display: flex;
+                border-top: 1px solid #ddd;
+            }
+
+            .left-link {
+                flex: 1;
+                justify-content: flex-start;
+                padding-left:18.5px;
+            }
+
+            .right-link {
+                padding-right: 18.5px;
+                justify-content: flex-end;
+                
+            }
+
+            .carbon {
+                justify-content: center;
+                padding-right: 350px;
+            }
+
+            @media only screen and (max-width: 1200px) {
+                .carbon {
+                    order: 0;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+
+
         </style>
     </head>
     <body>
-        <div class="nav">
-            <a class="nav-item" href="">
+        <div class="nav1">
+            <a href="">
                 Gmail
             </a>
-            <a class="nav-item" href="">
+            <a href="">
                 Images
             </a>
-            <img class="nav-item" src="">
-            <a class="nav-item" href="">Sign In</a>
+            <img src="images/g-menu.png" style="length:30px; width:30px">
+            <button>Sign In</button>   
         </div>
+        <br>
+        <br>
         <div class="container2">
-            <img src="Google_2015_logo.svg.png" alt="Google">
-            <div class="row">
-                <div class="col-3">&nbsp;</div>
-                <div class="col-6 justify-items-center">
-                    <div class="search-box">
-                        <form>
-                            <img src
-                            <input type="text" id="textfield">
-                        </form>
-
-                    </div>
+            <img src="images/logo (1).png" alt="Google">
+            <form>
+                <br>
+                <br>
+                <div class="search-box">
+                    <img src="images/search.svg" class="search-icon">
+                    <input type="text" id="textfield">
+                    <img src="images/vs.png" class="voice-icon">
+                    <input type="submit" class="btn1" value="Google search"/>
+                    <input type="submit" class="btn1" value="I'm feeling lucky">
                 </div>
-                <div class="col-3">&nbsp;</div>
-            </div>
+            </form>
         </div>
+        <div class="language">
+            Google also offers language in: 
+            <a href="">Hausa</a>
+            <a href="">Igbo</a>
+            <a href="">Èdè Yorùbá</a>
+            <a href="">Nigerian Pidgin</a>
+        </div>
+        <br>
+        <br>
+        <footer>
+            <h4>Nigeria</h4>
+            <div class="footer-links">
+                <div class="left-link">
+                    <a href="">About</a>
+                    <a href="">Advertising</a>
+                    <a href="">Business</a>
+                    <a href="">How Search works</a>
+                </div>
+                <div class="carbon">
+                    <a href="">
+                        <img src="images/carbon-neutral.png" style="height: 14px;">
+                        Carbon neutral since 2007
+                    </a>
+                </div>
+                <div class="right-link">
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                    <a href="">Settings</a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
